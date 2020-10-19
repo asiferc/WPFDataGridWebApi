@@ -17,4 +17,3 @@ C:\Users\Asif\source\repos\WpfApp1\DataWebApi\obj\Debug\netcoreapp3.1\staticweba
 C:\Users\Asif\source\repos\WpfApp1\DataWebApi\obj\Debug\netcoreapp3.1\DataWebApi.dll
 C:\Users\Asif\source\repos\WpfApp1\DataWebApi\obj\Debug\netcoreapp3.1\DataWebApi.pdb
 C:\Users\Asif\source\repos\WpfApp1\DataWebApi\obj\Debug\netcoreapp3.1\DataWebApi.genruntimeconfig.cache
-C:\Users\Asif\source\repos\WpfApp1\DataWebApi\obj\Debug\netcoreapp3.1\DataWebApi.csprojAssemblyReference.cache

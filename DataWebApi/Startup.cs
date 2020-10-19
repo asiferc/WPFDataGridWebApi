@@ -26,26 +26,7 @@ namespace DataWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-
-            services.AddCors();
-
-            services.Configure<ApiBehaviorOptions>(options =>
-            {
-                options.InvalidModelStateResponseFactory = context =>
-                {
-                    var problemDetails = new ValidationProblemDetails(context.ModelState);
-
-                    var result = new BadRequestObjectResult(problemDetails);
-
-                    result.ContentTypes.Add("application/problem+json");
-                    result.ContentTypes.Add("application/problem+xml");
-
-                    return result;
-                };
-            });
-
-            
+            services.AddControllers();        
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,12 +40,6 @@ namespace DataWebApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            app.UseCors(x => x
-                .AllowAnyMethod()
-                .AllowAnyHeader()
-                .SetIsOriginAllowed(origin => true) // allow any origin
-                .AllowCredentials()); // allow credentials
 
             app.UseAuthorization();
 
